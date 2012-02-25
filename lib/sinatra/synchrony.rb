@@ -3,7 +3,6 @@ require 'rack/fiber_pool'
 require 'eventmachine'
 require 'em-http-request'
 require 'em-synchrony'
-require 'em-resolv-replace'
 
 module Sinatra
   module Synchrony
@@ -32,10 +31,6 @@ module Sinatra
     class << self
       def patch_tests!
         require 'sinatra/synchrony/mock_session'
-      end
-
-      def overload_tcpsocket!
-        require 'sinatra/synchrony/tcpsocket'
       end
     end
   end

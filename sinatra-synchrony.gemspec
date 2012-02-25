@@ -17,7 +17,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'eventmachine',      '> 1.0.0.beta.1', '< 1.0.0.beta.100'
   s.add_dependency 'em-http-request',   '~> 1.0'
   s.add_dependency 'em-synchrony',      '~> 1.0'
-  s.add_dependency 'em-resolv-replace', '~> 1.1'
 
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rack-test', '~> 0.5'
